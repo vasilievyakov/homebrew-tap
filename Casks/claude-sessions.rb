@@ -13,7 +13,7 @@ cask "claude-sessions" do
 
   postflight do
     system_command "/usr/bin/xattr",
-                   args: ["-cr", "#{appdir}/ClaudeSessions.app"]
+                   args: ["-cr", "/Applications/ClaudeSessions.app"]
   end
 
   zap trash: [
