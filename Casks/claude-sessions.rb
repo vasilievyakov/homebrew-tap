@@ -1,6 +1,6 @@
 cask "claude-sessions" do
-  version "1.0.0"
-  sha256 "d38ff72e53bc980efe14fb84f03e2813dd72cbf32d060ca4bb1d4a740cdda8af"
+  version "1.0.1"
+  sha256 "da2ec3648a98c90c65b9ac42ce2df142b5a81bd9de8ba69d06fba2a6bdf22fdf"
 
   url "https://github.com/vasilievyakov/miracle-claude-sessions/releases/download/v#{version}/ClaudeSessions.app.zip"
   name "Claude Sessions"
