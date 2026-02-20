@@ -11,6 +11,11 @@ cask "claude-sessions" do
 
   app "ClaudeSessions.app"
 
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-cr", "#{appdir}/ClaudeSessions.app"]
+  end
+
   zap trash: [
     "~/Library/Caches/com.vasilievyakov.claudesessions",
     "~/Library/Preferences/com.vasilievyakov.claudesessions.plist",
